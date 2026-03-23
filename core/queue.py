@@ -145,6 +145,15 @@ class CardQueue:
             "last_batch_at": last_row[0] if last_row else None,
         }
 
+    def get_all_fronts(self, limit: int = 500) -> list:
+        """Return existing card front texts for deduplication. Most recent first."""
+        with self._conn() as conn:
+            rows = conn.execute(
+                "SELECT front FROM cards ORDER BY created_at DESC LIMIT ?",
+                (limit,),
+            ).fetchall()
+        return [row["front"] for row in rows]
+
     def _row_to_card(self, row: sqlite3.Row) -> Card:
         return Card(
             id=row["id"],

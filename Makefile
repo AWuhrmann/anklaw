@@ -1,4 +1,5 @@
-.PHONY: install test simulate dry-run-generate dry-run-sync health-check lint clean
+.PHONY: install test simulate dry-run-generate dry-run-sync health-check lint clean \
+        agent-check agent-dry-run topics
 
 PYTHON := python3
 VENV   := venv
@@ -64,6 +65,17 @@ health-check:
 	@echo "-- Queue stats (VPS) ---------------"
 	-$(PY) local_sync.py --stats
 
+# -- Claude Code agent mode ---------------------------------------------------
+
+topics:
+	$(PY) topics.py list
+
+agent-check:
+	bash run_agent.sh --check
+
+agent-dry-run:
+	bash run_agent.sh --dry-run
+
 # -- Queue management ---------------------------------------------------------
 
 stats:
@@ -75,7 +87,7 @@ retry-failed:
 # -- Utilities ----------------------------------------------------------------
 
 lint:
-	$(PY) -m flake8 core/ vps_generate.py local_sync.py simulate.py vps_queue.py --max-line-length 100
+	$(PY) -m flake8 core/ vps_generate.py local_sync.py simulate.py vps_queue.py topics.py --max-line-length 100
 
 clean:
 	find . -type d -name __pycache__ -exec rm -rf {} + 2>/dev/null; true

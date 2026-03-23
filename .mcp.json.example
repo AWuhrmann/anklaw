@@ -1,0 +1,25 @@
+{
+  "_comment": "Optional: richer web search via MCP servers. The built-in WebSearch tool works without this.",
+  "_comment2": "To use: copy to .mcp.json and add --mcp-config .mcp.json to run_agent.sh",
+  "_comment3": "Requires Node.js: node --version",
+
+  "mcpServers": {
+    "brave-search": {
+      "_note": "Get a free API key at: https://api.search.brave.com — 2,000 queries/month free",
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-brave-search"],
+      "env": {
+        "BRAVE_API_KEY": "YOUR_BRAVE_API_KEY_HERE"
+      }
+    },
+
+    "tavily": {
+      "_note": "Get a free API key at: https://tavily.com — better for research/academic queries",
+      "command": "npx",
+      "args": ["-y", "tavily-mcp@latest"],
+      "env": {
+        "TAVILY_API_KEY": "YOUR_TAVILY_API_KEY_HERE"
+      }
+    }
+  }
+}

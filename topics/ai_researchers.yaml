@@ -1,0 +1,53 @@
+# ─────────────────────────────────────────────────────────────
+# Topic: AI Researchers
+# Prominent technical people in AI — affiliations, contributions, connections
+# ─────────────────────────────────────────────────────────────
+
+name: "AI Researchers"
+slug: "ai_researchers"
+enabled: true
+description: >
+  Technical leaders and researchers in AI/ML — their current affiliations,
+  primary contributions, and connections to other researchers.
+
+cards_per_run: 8
+deck: "Research::People"
+card_type: "Basic"
+tags_base: ["ai", "researchers"]
+
+research_strategy:
+  search_queries:
+    - "prominent AI researchers 2025 major breakthroughs affiliations"
+    - "leading ML researchers recent work publications"
+    - "AI lab scientists notable contributions 2024 2025"
+    - "new AI research leaders emerging researchers"
+
+card_format: |
+  For each researcher, generate 3–4 cards following these templates EXACTLY.
+  Use web search to verify current affiliation and specific contributions.
+
+  CARD 1 — Overview:
+    Front: "Who is [Full Name]?"
+    Back: "[Current role], [institution/lab]. Known for: [2–3 specific, concrete contributions].
+           [1 notable fact: Turing Award, key paper, notable quote, or recent news]."
+
+  CARD 2 — Primary contribution:
+    Front: "What is [Name]'s primary research contribution?"
+    Back: "[Specific work, e.g. paper name or technique]. Published/developed at [venue/year].
+           Why it matters: [1–2 sentences on impact]."
+
+  CARD 3 — Affiliation:
+    Front: "Where does [Name] currently work?"
+    Back: "[Institution], [team or group name if known]. [Context: founded X, leads Y,
+           previously at Z]."
+
+  CARD 4 (optional) — Collaboration/network:
+    Front: "Who are [Name]'s notable collaborators or former students?"
+    Back: "[Names and context]. [What they worked on together or what the student went on to do]."
+
+  RULES:
+  - Use real, specific, verifiable information from web search.
+  - Prefer researchers who are NOT already in the existing cards list.
+  - Do not invent affiliations or contributions.
+  - Tags should include the person's slug (e.g., "yann-lecun"), their institution
+    (e.g., "meta-ai"), and research area (e.g., "computer-vision").

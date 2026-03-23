@@ -1,0 +1,60 @@
+# ─────────────────────────────────────────────────────────────
+# Topic: Trending AI Papers
+# Recent papers getting significant community attention
+# ─────────────────────────────────────────────────────────────
+
+name: "Trending AI Papers"
+slug: "trending_papers"
+enabled: true
+description: >
+  Recent AI/ML papers that are getting significant attention — authors,
+  affiliations, core findings, and key concepts to learn.
+
+cards_per_run: 12
+deck: "Research::Papers"
+card_type: "Basic"
+tags_base: ["papers", "ai", "research"]
+
+research_strategy:
+  search_queries:
+    - "most discussed AI machine learning paper this week 2025"
+    - "viral AI paper arxiv trending community 2025"
+    - "groundbreaking ML paper recently published researchers talking about"
+    - "new AI paper everyone reading site:arxiv.org OR site:openreview.net"
+
+card_format: |
+  For each paper, generate 4–5 cards following these templates EXACTLY.
+  Search for the actual paper to verify authors, affiliations, and findings.
+  Only use papers you can confirm exist via web search.
+
+  CARD 1 — What it is:
+    Front: "What is the paper '[Exact Title]' about?"
+    Back: "[1–2 sentence summary of the core contribution]. Published: [Month Year],
+           [venue/conference or arXiv ID if preprint]."
+
+  CARD 2 — Who wrote it:
+    Front: "Who wrote '[Exact Title]' and where are they from?"
+    Back: "[Lead author(s)], [affiliations]. [Note if from a major lab: Google DeepMind,
+           OpenAI, Meta FAIR, academic lab, etc.]."
+
+  CARD 3 — The problem it solves:
+    Front: "What problem does '[Exact Title]' address?"
+    Back: "[Specific technical problem or gap]. The paper's approach: [how they solve it].
+           [Key result or metric if notable, e.g., 'achieves X% improvement on benchmark Y']."
+
+  CARD 4 — Key concept:
+    Front: "What is [specific technique/concept introduced in this paper]?"
+    Back: "[Clear technical explanation of the concept]. How it's used in '[Title]':
+           [1–2 sentences on its role in the paper]."
+
+  CARD 5 (optional) — Follow-up / implications:
+    Front: "What does '[Title]' imply for [specific subfield]?"
+    Back: "[Concrete implication or direction the paper opens up]. [Community reaction
+           or follow-up work if known]."
+
+  RULES:
+  - Only use papers from the LAST 4–6 WEEKS that have real community discussion.
+  - Never invent a paper — if you can't verify it via web search, skip it.
+  - Include the publication month and year in tags (e.g., "march-2025").
+  - Tags should include: paper slug (short name), authors' last names, topic area.
+  - Do not duplicate papers already in the existing cards list.
