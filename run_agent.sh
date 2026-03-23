@@ -52,9 +52,10 @@ if ! command -v claude &>/dev/null; then
     exit 1
 fi
 
-if [[ -z "${ANTHROPIC_API_KEY:-}" ]]; then
-    log "ERROR: ANTHROPIC_API_KEY is not set. Add it to .env"
-    exit 1
+# ANTHROPIC_API_KEY is only needed for the Python SDK (vps_generate.py).
+# The claude CLI authenticates via OAuth (your subscription login) — no API key required here.
+if [[ -n "${ANTHROPIC_API_KEY:-}" ]]; then
+    log "Note: ANTHROPIC_API_KEY is set (used by Python SDK scripts, not needed for claude CLI)"
 fi
 
 if [[ ! -f config.yaml ]]; then
@@ -76,7 +77,7 @@ export TODAY=$(date -u +%Y-%m-%d)
 
 if [[ "$CHECK_ONLY" == true ]]; then
     log "Check: claude CLI found at $(command -v claude)"
-    log "Check: ANTHROPIC_API_KEY is set"
+    log "Check: claude auth — $(claude -p 'respond with: authenticated' --max-turns 1 --allowedTools '' 2>/dev/null || echo 'NOT authenticated (run: claude auth login)')"
     log "Check: DB_PATH = $DB_PATH"
     log "Check: PROJECT_DIR = $PROJECT_DIR"
     TOPICS_ENABLED=$(python3 -c "
