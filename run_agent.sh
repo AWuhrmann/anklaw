@@ -121,15 +121,16 @@ log "─────────────────────────
 # Clean up previous output file so we can detect if agent produced new output
 rm -f agent_output.json
 
-# stdbuf -oL forces line-buffered output so each line appears immediately
-# (without it, piping into tee causes block-buffering and nothing shows up live)
-stdbuf -oL claude -p "$PROMPT" \
+# NOTE: claude is a Node.js process. When its stdout is a pipe (| tee),
+# Node.js switches to block-buffering and nothing appears live.
+# Writing directly to the terminal (TTY) forces line-by-line streaming.
+# For cron runs: the crontab entry redirects the whole script to the log file.
+claude -p "$PROMPT" \
     --allowedTools "Bash,Read,Write,WebSearch,WebFetch" \
     --max-turns 50 \
-    --verbose \
-    2>&1 | stdbuf -oL tee -a "$LOG_FILE"
+    --verbose
 
-EXIT_CODE=${PIPESTATUS[0]}
+EXIT_CODE=$?
 
 # ── Verify output ─────────────────────────────────────────────────────────────
 if [[ $EXIT_CODE -ne 0 ]]; then
