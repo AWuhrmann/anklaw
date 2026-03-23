@@ -105,18 +105,29 @@ if [[ "$DRY_RUN" == true ]]; then
     exit 0
 fi
 
+# ── Quick auth + connectivity check ──────────────────────────────────────────
+log "Checking claude auth..."
+if ! timeout 30 claude -p "respond with: ok" --max-turns 1 --allowedTools "" > /dev/null 2>&1; then
+    log "ERROR: claude is not responding. Check auth with: claude auth login"
+    exit 1
+fi
+log "Claude auth OK."
+
 # ── Run agent ─────────────────────────────────────────────────────────────────
 log "Starting agent run (DB: $DB_PATH)"
 log "Topics: $(python3 topics.py list 2>/dev/null | grep -c '✓' || echo '?') enabled"
+log "────────────────────────────────────────────────────"
 
 # Clean up previous output file so we can detect if agent produced new output
 rm -f agent_output.json
 
-claude -p "$PROMPT" \
+# stdbuf -oL forces line-buffered output so each line appears immediately
+# (without it, piping into tee causes block-buffering and nothing shows up live)
+stdbuf -oL claude -p "$PROMPT" \
     --allowedTools "Bash,Read,Write,WebSearch,WebFetch" \
     --max-turns 50 \
     --verbose \
-    2>&1 | tee -a "$LOG_FILE"
+    2>&1 | stdbuf -oL tee -a "$LOG_FILE"
 
 EXIT_CODE=${PIPESTATUS[0]}
 
