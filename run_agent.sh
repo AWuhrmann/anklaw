@@ -115,6 +115,7 @@ rm -f agent_output.json
 claude -p "$PROMPT" \
     --allowedTools "Bash,Read,Write,WebSearch,WebFetch" \
     --max-turns 50 \
+    --verbose \
     2>&1 | tee -a "$LOG_FILE"
 
 EXIT_CODE=${PIPESTATUS[0]}
