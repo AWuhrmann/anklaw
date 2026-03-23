@@ -1,0 +1,39 @@
+# ─────────────────────────────────────────────────────────────
+#  Anki Agent — Configuration
+#  Copy this file to config.yaml and fill in your values.
+#  API keys go in .env (never in this file).
+# ─────────────────────────────────────────────────────────────
+
+vps:
+  host: "your-vps.example.com"   # IP or hostname
+  user: "ubuntu"                  # SSH user
+  ssh_key_path: "~/.ssh/id_rsa"  # Path to private key
+  db_path: "~/anki-agent/cards.db"
+  script_path: "~/anki-agent"
+  port: 22
+
+local:
+  anki_connect_url: "http://localhost:8765"
+
+generation:
+  cards_per_day: 20
+
+  # Prompt: describe WHAT to generate and HOW.
+  # The LLM will read this each day and generate fresh cards.
+  topic_instructions: |
+    Generate flashcards about advanced Python programming.
+    Focus on: async/await, decorators, metaclasses, memory management,
+    and the standard library. Mix conceptual questions with practical
+    code-reading questions. Assume an intermediate-to-advanced audience.
+    Avoid trivial syntax questions.
+
+  deck_name: "Programming::Python"  # Supports Anki hierarchy with ::
+  card_type: "Basic"                 # "Basic" or "Cloze"
+
+  llm_provider: "anthropic"         # "anthropic" or "openai"
+  llm_model: "claude-opus-4-6"      # or "gpt-4o", "claude-sonnet-4-6", etc.
+  max_retries: 3
+
+  # Set to true to fetch recent web results before generating cards.
+  # Requires: pip install duckduckgo-search
+  research_enabled: false

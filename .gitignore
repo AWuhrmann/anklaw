@@ -1,0 +1,26 @@
+# Personal configuration (contains your topic instructions etc.)
+config.yaml
+
+# Secrets
+.env
+
+# Database
+*.db
+
+# Logs
+logs/
+*.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# OS
+.DS_Store
