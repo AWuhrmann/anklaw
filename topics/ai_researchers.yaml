@@ -8,7 +8,8 @@ slug: "ai_researchers"
 enabled: true
 description: >
   Technical leaders and researchers in AI/ML — their current affiliations,
-  primary contributions, and connections to other researchers.
+  primary contributions, and connections to other researchers. With a focus
+  on AI Safety, though major ML actors are of course needed.
 
 cards_per_run: 8
 deck: "Research::People"
@@ -23,8 +24,12 @@ research_strategy:
     - "new AI research leaders emerging researchers"
 
 card_format: |
-  For each researcher, generate 3–4 cards following these templates EXACTLY.
+  For each researcher, generate 3–4 cards following these templates.
   Use web search to verify current affiliation and specific contributions.
+  While following these templates exactly help for deep memorization, feel 
+  free to adapt them depending on the topic and the case. Moreover, feel free to use some "Cloze"
+  cards instead of the default  "Basic". In particular, I am very intersted in knowing when they contributed
+  to a major project / paper, so please make a separate card for this or a cloze. 
 
   CARD 1 — Overview:
     Front: "Who is [Full Name]?"

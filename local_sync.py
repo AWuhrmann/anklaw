@@ -77,7 +77,10 @@ def main():
         sys.exit(0 if ok else 1)
 
     # --- Fetch cards ---
-    if args.mock_vps:
+    # Local mode: vps.host is empty or "localhost" → read DB directly (no SSH)
+    use_local = args.mock_vps or not config.vps.host or config.vps.host in ("localhost", "127.0.0.1")
+
+    if use_local:
         db_path = args.local_db or config.vps.db_path
         local_queue = CardQueue(db_path)
 
@@ -90,7 +93,7 @@ def main():
             return
 
         cards = local_queue.get_pending()
-        logger.info(f"[MOCK VPS] Loaded {len(cards)} cards from local DB: {db_path}")
+        logger.info(f"Loaded {len(cards)} cards from local DB: {db_path}")
     else:
         vps = _make_vps_client(config)
         try:
@@ -136,7 +139,7 @@ def main():
         succeeded, failed = anki.add_cards(cards)
 
     # --- Update queue ---
-    if args.mock_vps:
+    if use_local:
         db_path = args.local_db or config.vps.db_path
         local_queue = CardQueue(db_path)
         local_queue.mark_imported(succeeded)

@@ -1,0 +1,149 @@
+[
+  {
+    "front": "Who is Andrej Karpathy?",
+    "back": "Independent AI researcher and founder of Eureka Labs, an AI-native education company (founded July 2024). Previously founding member and Research Director at OpenAI (2015–2017, returned 2022–2023) and Director of AI at Tesla Autopilot (2017–2022). Known for nanoGPT, micrograd, and the 'Neural Networks: Zero to Hero' YouTube lecture series. Released MicroGPT in February 2026 — a GPT implemented in 243 lines of pure Python.",
+    "tags": ["andrej-karpathy", "eureka-labs", "openai", "tesla", "education"],
+    "deck": "Research::People",
+    "topic": "ai_researchers"
+  },
+  {
+    "front": "What is Andrej Karpathy's primary research contribution?",
+    "back": "Karpathy co-developed early deep-learning methods for image captioning and video description during his Stanford PhD (2016, advised by Fei-Fei Li). He is best known for highly accessible implementations of LLM fundamentals: nanoGPT (a minimal GPT-2 training codebase) and the 'Zero to Hero' lecture series. His AutoResearch project (2026) ran 700 experiments in 2 days on a single GPU using a self-improving agent loop. His work has made transformer training accessible to millions of developers.",
+    "tags": ["andrej-karpathy", "nanogpt", "transformer", "education", "stanford"],
+    "deck": "Research::People",
+    "topic": "ai_researchers"
+  },
+  {
+    "front": "Where does Andrej Karpathy currently work?",
+    "back": "Founder and CEO of Eureka Labs (founded July 2024), an AI-native education startup whose first product is the course LLM101n. Operating independently as of 2024–2026, after stints at OpenAI (2015–2017, 2022–2023) and Tesla (2017–2022). Continues publishing educational content on YouTube and releasing open-source projects such as MicroGPT (February 2026).",
+    "tags": ["andrej-karpathy", "eureka-labs", "openai", "tesla"],
+    "deck": "Research::People",
+    "topic": "ai_researchers"
+  },
+  {
+    "front": "Who is Demis Hassabis?",
+    "back": "CEO and co-founder of Google DeepMind. Awarded the 2024 Nobel Prize in Chemistry (jointly with John Jumper) for developing AlphaFold, an AI system that predicts protein 3D structures from amino acid sequences. Co-founded DeepMind in London in 2010; Google acquired it in 2014. Also founded Isomorphic Labs in 2021 to apply AlphaFold to drug discovery. Became one of the youngest Nobel laureates in Chemistry.",
+    "tags": ["demis-hassabis", "deepmind", "alphafold", "nobel-prize", "protein-structure"],
+    "deck": "Research::People",
+    "topic": "ai_researchers"
+  },
+  {
+    "front": "What is Demis Hassabis's primary research contribution?",
+    "back": "AlphaFold (2020–2022), an AI system that predicts protein 3D structures from amino acid sequences with near-experimental accuracy, solving a 50-year-old grand challenge in structural biology. AlphaFold 2 was published in Nature in 2021; by 2024 it had predicted structures for over 200 million proteins — essentially the entire known protein universe. The work earned Hassabis and collaborator John Jumper the 2024 Nobel Prize in Chemistry.",
+    "tags": ["demis-hassabis", "alphafold", "protein-structure", "deepmind", "nobel-prize-2024"],
+    "deck": "Research::People",
+    "topic": "ai_researchers"
+  },
+  {
+    "front": "Where does Demis Hassabis currently work?",
+    "back": "CEO and co-founder of Google DeepMind, the unified AI research organization formed in April 2023 from DeepMind and Google Brain. He oversees all research and product AI at Google's DeepMind umbrella, including the Gemini model family. He also serves as CEO of Isomorphic Labs, DeepMind's drug-discovery spinoff, which raised a $600M Series A in March 2025.",
+    "tags": ["demis-hassabis", "deepmind", "google", "isomorphic-labs", "gemini"],
+    "deck": "Research::People",
+    "topic": "ai_researchers"
+  },
+  {
+    "front": "Who is Fei-Fei Li?",
+    "back": "AI researcher, Stanford Professor, and co-founder/CEO of World Labs. Creator of ImageNet (2009), the large-scale visual recognition dataset that catalyzed the deep learning revolution. Former Co-Director of Stanford Human-Centered AI Institute (HAI). Awarded the Queen Elizabeth Prize for Engineering in 2025. Named in TIME's 'Architects of AI' for 2025. World Labs raised $1B in funding in February 2026 at a ~$5B valuation.",
+    "tags": ["fei-fei-li", "stanford", "imagenet", "world-labs", "computer-vision"],
+    "deck": "Research::People",
+    "topic": "ai_researchers"
+  },
+  {
+    "front": "What is Fei-Fei Li's primary research contribution?",
+    "back": "ImageNet (2009), a dataset of over 14 million labeled images across 20,000+ categories, which became the benchmark for the ImageNet Large Scale Visual Recognition Challenge (ILSVRC). The 2012 ILSVRC result — AlexNet's landslide win by Hinton, Krizhevsky, and Sutskever — demonstrated the power of deep convolutional networks and launched the modern deep learning era. ImageNet is broadly credited as a foundational catalyst for current AI capabilities.",
+    "tags": ["fei-fei-li", "imagenet", "ilsvrc", "computer-vision", "deep-learning"],
+    "deck": "Research::People",
+    "topic": "ai_researchers"
+  },
+  {
+    "front": "Where does Fei-Fei Li currently work?",
+    "back": "Co-founder and CEO of World Labs (founded 2024), a startup building AI systems with 'spatial intelligence' — the ability to understand and reason about 3D space. World Labs raised $1B in new funding in February 2026, reaching a ~$5B valuation. Li is also Sequoia Capital Professor of Computer Science at Stanford University and co-director of Stanford HAI, currently on partial leave of absence.",
+    "tags": ["fei-fei-li", "world-labs", "stanford", "spatial-intelligence"],
+    "deck": "Research::People",
+    "topic": "ai_researchers"
+  },
+  {
+    "front": "What is the paper 'AI Can Learn Scientific Taste' about?",
+    "back": "Proposes Reinforcement Learning from Community Feedback (RLCF), a framework that trains AI systems to evaluate and generate high-impact research ideas using citation patterns as training signals. Introduces two models: Scientific Judge (evaluator, trained on 700K citation-matched paper pairs) and Scientific Thinker (idea generator). The Scientific Thinker outperforms GPT-5.2 and Gemini 3 Pro at proposing impactful research. Published March 15, 2026, arXiv:2603.14473.",
+    "tags": ["ai-can-learn-scientific-taste", "rlcf", "scientific-judgment", "march-2026", "openmos"],
+    "deck": "Research::Papers",
+    "topic": "trending_papers"
+  },
+  {
+    "front": "Who wrote 'AI Can Learn Scientific Taste' and where are they from?",
+    "back": "Jingqi Tong, Mingzhe Li, Xipeng Qiu, and 20+ co-authors from the OpenMOSS Team — a research group affiliated with Fudan University's NLP group, the Shanghai Innovation Institute (SII), Tsinghua University, and Central South University. The project is led by Xipeng Qiu's group at Fudan, known for the MOSS open-source conversational LLM.",
+    "tags": ["ai-can-learn-scientific-taste", "fudan-university", "openmos", "xipeng-qiu", "march-2026"],
+    "deck": "Research::Papers",
+    "topic": "trending_papers"
+  },
+  {
+    "front": "What problem does 'AI Can Learn Scientific Taste' address?",
+    "back": "The challenge of automatically evaluating research quality and generating high-impact ideas — a task previously requiring deep domain expertise and human judgment. Existing LLMs lack calibrated 'scientific taste.' The paper trains a Scientific Judge on 700K field- and time-matched paper pairs (high vs. low citation) as a reward model, then uses it to train a Scientific Thinker via reinforcement learning to propose research ideas with measurably higher potential impact.",
+    "tags": ["ai-can-learn-scientific-taste", "rlcf", "research-evaluation", "scientific-judge", "march-2026"],
+    "deck": "Research::Papers",
+    "topic": "trending_papers"
+  },
+  {
+    "front": "What is Reinforcement Learning from Community Feedback (RLCF)?",
+    "back": "A training paradigm introduced in 'AI Can Learn Scientific Taste' (arXiv:2603.14473, March 2026) that uses large-scale community signals — specifically citation counts — as reward signal instead of expensive human preference labels. A Scientific Judge is trained discriminatively on 700K field- and time-matched paper pairs to distinguish high- from low-impact research. This judge then rewards a Scientific Thinker policy model that proposes new research ideas, framing scientific taste as a learnable preference-modeling problem.",
+    "tags": ["rlcf", "ai-can-learn-scientific-taste", "reinforcement-learning", "community-feedback", "march-2026"],
+    "deck": "Research::Papers",
+    "topic": "trending_papers"
+  },
+  {
+    "front": "What is the paper 'Helios: Real Real-Time Long Video Generation Model' about?",
+    "back": "Presents Helios, a 14B-parameter autoregressive diffusion model that generates long videos at 19.5 FPS on a single NVIDIA H100 GPU — achieving true real-time performance without acceleration tricks. Supports text-to-video, image-to-video, and video-to-video tasks in a unified architecture. Fully open-sourced under Apache 2.0 with model checkpoints and training scripts. Published March 4, 2026, arXiv:2603.04379.",
+    "tags": ["helios", "video-generation", "diffusion", "bytedance", "march-2026"],
+    "deck": "Research::Papers",
+    "topic": "trending_papers"
+  },
+  {
+    "front": "Who wrote 'Helios: Real Real-Time Long Video Generation Model' and where are they from?",
+    "back": "Shenghai Yuan, Yuanyang Yin, Zongjian Li, Xinwei Huang, Xiao Yang, and Li Yuan from the PKU-YuanGroup at Peking University, in collaboration with ByteDance, Canva, and Chengdu Anu Intelligence. The PKU-YuanGroup is led by Professor Li Yuan. Released fully open-source at github.com/PKU-YuanGroup/Helios.",
+    "tags": ["helios", "peking-university", "bytedance", "li-yuan", "video-generation"],
+    "deck": "Research::Papers",
+    "topic": "trending_papers"
+  },
+  {
+    "front": "What problem does 'Helios: Real Real-Time Long Video Generation Model' address?",
+    "back": "Video generation models typically suffer from temporal drift in long sequences, require acceleration techniques (KV-cache, quantization, sparse attention) for real-time inference, and need large-scale GPU parallelism for training. Helios eliminates anti-drifting heuristics (self-forcing, error-banks, keyframe sampling) via a novel training strategy, achieves 19.5 FPS on a single H100 without any acceleration, and fits four 14B models in 80GB GPU memory without parallelism frameworks.",
+    "tags": ["helios", "video-generation", "real-time", "temporal-drift", "march-2026"],
+    "deck": "Research::Papers",
+    "topic": "trending_papers"
+  },
+  {
+    "front": "What makes Helios's approach to long-video generation technically distinct?",
+    "back": "Helios (arXiv:2603.04379) trains by explicitly simulating failure modes such as temporal drift during training rather than patching them at inference with self-forcing or keyframe anchors. This makes the model inherently robust to long-horizon degradation. Combined with an efficient memory layout that avoids parallelism frameworks, the 14B model achieves image-diffusion-scale batch sizes and 19.5 FPS real-time inference on a single NVIDIA H100 — without KV-cache, quantization, or sparse attention.",
+    "tags": ["helios", "training-strategy", "autoregressive-diffusion", "temporal-drift", "march-2026"],
+    "deck": "Research::Papers",
+    "topic": "trending_papers"
+  },
+  {
+    "front": "What is the paper 'Attention Residuals' about?",
+    "back": "Proposes replacing standard residual connections in transformer models with learned, input-dependent aggregation via softmax attention over all preceding layer outputs (AttnRes). The technique produces more uniform hidden-state magnitudes across depth and improves multi-step reasoning by up to 7.5 points on GPQA-Diamond. Integrated into Kimi Linear (48B total / 3B activated parameters, pre-trained on 1.4T tokens). Published March 2026, arXiv:2603.15031, by the Kimi Team at Moonshot AI.",
+    "tags": ["attention-residuals", "attnres", "moonshot-ai", "kimi", "march-2026"],
+    "deck": "Research::Papers",
+    "topic": "trending_papers"
+  },
+  {
+    "front": "Who wrote 'Attention Residuals' and where are they from?",
+    "back": "The Kimi Team at Moonshot AI, with lead contributors including Guangyu Chen, Yu Zhang, and Jianlin Su (creator of Rotary Position Embedding / RoPE), plus 33 additional co-authors. Moonshot AI is a Chinese AI startup best known for the Kimi family of long-context language models. The work is a product-integrated research paper, with AttnRes shipping inside the Kimi Linear production model.",
+    "tags": ["attention-residuals", "moonshot-ai", "kimi-team", "jianlin-su", "march-2026"],
+    "deck": "Research::Papers",
+    "topic": "trending_papers"
+  },
+  {
+    "front": "What problem does 'Attention Residuals' address in transformer architectures?",
+    "back": "Standard residual connections with Pre-Layer Normalization accumulate layer outputs uniformly, causing uncontrolled hidden-state growth with depth and progressively diluting each layer's individual contribution to the final representation. This limits the model's ability to selectively use information from earlier layers. AttnRes replaces fixed additive accumulation with content-dependent selection, yielding more uniform output magnitudes and improved gradient distribution across depth.",
+    "tags": ["attention-residuals", "residual-connections", "transformer", "attnres", "march-2026"],
+    "deck": "Research::Papers",
+    "topic": "trending_papers"
+  },
+  {
+    "front": "What is the AttnRes technique introduced in 'Attention Residuals'?",
+    "back": "Attention Residuals (AttnRes) replaces uniform additive residual connections with softmax attention over all preceding layer outputs, so each layer learns — conditioned on the current token representation — how much to draw from each prior layer. Block AttnRes is a memory-efficient variant that partitions layers into blocks and attends over block-level summaries instead of every layer, reducing overhead while preserving gains. Integrated into Kimi Linear (48B/3B activated), it achieves up to 7.5-point improvements on GPQA-Diamond multi-step reasoning.",
+    "tags": ["attnres", "attention-residuals", "transformer-architecture", "moonshot-ai", "march-2026"],
+    "deck": "Research::Papers",
+    "topic": "trending_papers"
+  }
+]

@@ -8,24 +8,29 @@ slug: "trending_papers"
 enabled: true
 description: >
   Recent AI/ML papers that are getting significant attention — authors,
-  affiliations, core findings, and key concepts to learn.
+  affiliations, core findings, and key concepts to learn OR historical AI/ML papers 
+  that have had high impacts in the field. A preference for AI Safety papers, though
+  general AI/ML papers are also important.
 
-cards_per_run: 12
+cards_per_run: "10-20"
 deck: "Research::Papers"
-card_type: "Basic"
+card_type: "Basic" or "Cloze"
 tags_base: ["papers", "ai", "research"]
 
 research_strategy:
-  search_queries:
-    - "most discussed AI machine learning paper this week 2025"
-    - "viral AI paper arxiv trending community 2025"
+  suggested_search_queries:
+    - "most discussed AI safety machine learning paper this week {year}"
+    - "viral AI paper arxiv trending community {year}"
     - "groundbreaking ML paper recently published researchers talking about"
-    - "new AI paper everyone reading site:arxiv.org OR site:openreview.net"
+    - "new AI (safety) paper everyone reading site:arxiv.org OR site:openreview.net"
 
 card_format: |
-  For each paper, generate 4–5 cards following these templates EXACTLY.
+  For each paper, generate 3-8 cards following these templates EXACTLY.
   Search for the actual paper to verify authors, affiliations, and findings.
-  Only use papers you can confirm exist via web search.
+  Only use papers you can confirm exist via web search. Find below some typical structure. This
+  is VERY IMPORTANT to keep in mind that these are just suggestions. Typically, try to use
+  these templates, but you can adapt when it doesn't feel natural. Moreover, feel free to 
+  add any information that you find relevant.
 
   CARD 1 — What it is:
     Front: "What is the paper '[Exact Title]' about?"
@@ -53,7 +58,7 @@ card_format: |
            or follow-up work if known]."
 
   RULES:
-  - Only use papers from the LAST 4–6 WEEKS that have real community discussion.
+  - Use either recent papers that have real community discussion, or historical papers that haven't been treated yet.
   - Never invent a paper — if you can't verify it via web search, skip it.
   - Include the publication month and year in tags (e.g., "march-2025").
   - Tags should include: paper slug (short name), authors' last names, topic area.
