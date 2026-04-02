@@ -42,10 +42,9 @@ card_format: |
     Back: "[Lead author(s)], [affiliations]. [Note if from a major lab: Google DeepMind,
            OpenAI, Meta FAIR, academic lab, etc.]."
 
-  CARD 3 — The problem it solves:
-    Front: "What problem does '[Exact Title]' address?"
-    Back: "[Specific technical problem or gap]. The paper's approach: [how they solve it].
-           [Key result or metric if notable, e.g., 'achieves X% improvement on benchmark Y']."
+  CARD 3 — The approximate date it was published:
+    Front: "When was '[Exact Title]' published ?"
+    Back: "Approx. date (fall 2024, november, 2025, at xxx conference if important]"
 
   CARD 4 — Key concept:
     Front: "What is [specific technique/concept introduced in this paper]?"
