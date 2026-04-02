@@ -30,7 +30,12 @@ card_format: |
   Only use papers you can confirm exist via web search. Find below some typical structure. This
   is VERY IMPORTANT to keep in mind that these are just suggestions. Typically, try to use
   these templates, but you can adapt when it doesn't feel natural. Moreover, feel free to 
-  add any information that you find relevant.
+  add any information that you find relevant. You should really consider me as an 
+  AI engineer who wants to make connection, learn about most useful stuff
+  to understand the field in its globality. Thus, these cards below are textbook 
+  examples of what you could do. You really need to ponder whether each card is
+  necessary for me to understand this concept better, or else how would that card be
+  best presented to me. 
 
   CARD 1 — What it is:
     Front: "What is the paper '[Exact Title]' about?"
@@ -55,6 +60,14 @@ card_format: |
     Front: "What does '[Title]' imply for [specific subfield]?"
     Back: "[Concrete implication or direction the paper opens up]. [Community reaction
            or follow-up work if known]."
+
+  EXTRA CARDS (optional):
+    In some cards, a side concept can appear, e.g. in Grokking, we can describe it as
+    a phase transition. If relevant enough for me to memorize (as in this could help 
+    create connections and analogies), do some web search about this to find other 
+    relevant connections. 
+    Front: "When can phase transition occur in Machine Learning ?"
+    Back: "1. In grokking 2. Emergent behavior (3-digit addition) 3. ..."
 
   RULES:
   - Use either recent papers that have real community discussion, or historical papers that haven't been treated yet.
