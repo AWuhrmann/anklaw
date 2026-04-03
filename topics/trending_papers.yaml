@@ -43,6 +43,8 @@ card_format: |
            [venue/conference or arXiv ID if preprint]."
 
   CARD 2 — Who wrote it:
+    Note: Also write the counterpart: What is Wei et al. (2021) -> Paper name. Do when largely
+      cited paper
     Front: "Who wrote '[Exact Title]' and where are they from?"
     Back: "[Lead author(s)], [affiliations]. [Note if from a major lab: Google DeepMind,
            OpenAI, Meta FAIR, academic lab, etc.]."
@@ -65,7 +67,7 @@ card_format: |
     In some cards, a side concept can appear, e.g. in Grokking, we can describe it as
     a phase transition. If relevant enough for me to memorize (as in this could help 
     create connections and analogies), do some web search about this to find other 
-    relevant connections. 
+    relevant connectioins. 
     Front: "When can phase transition occur in Machine Learning ?"
     Back: "1. In grokking 2. Emergent behavior (3-digit addition) 3. ..."
 

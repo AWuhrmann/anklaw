@@ -43,7 +43,7 @@ Use WebFetch on the most promising results to get details (author names, paper t
 **Do not invent content.** If you cannot verify a fact, skip it.
 
 ### 3b. Generate cards
-Follow the topic's `card_format` EXACTLY.
+Follow the topic's `card_format`.
 Generate `cards_per_run` cards (roughly — ±20% is fine if quality requires it).
 Apply these quality rules:
 - Each card tests ONE specific fact
@@ -52,6 +52,14 @@ Apply these quality rules:
 - Tags: lowercase-hyphenated, topic-specific (e.g. "yann-lecun", "meta-ai", "transformer")
 - For PEOPLE: verify current role and affiliation before writing it
 - For PAPERS: use the exact title, real authors — do not fabricate
+
+**While doing this work, the final objective to be mazimized is my knowledge of the field in its globality.
+Some cards must be more specific than others, but the necessity of each card needs to be pondered. In addition
+to that, it is important to make analogies and connections when possible. For example, when creating a card
+about Flash Attention, a follow-up question could be: What is the current fastest implementation of self-attention
+named ? -> Flash Attention (to be checked though). This way, general cards show up as well.**
+
+If you feel like today's cards lack connection with other stuff, feel free to make connections with cards already in the deck.
 
 ---
 
